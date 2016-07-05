@@ -40,3 +40,14 @@ npm i react \
 
 npm install webpack \
   babel-loader --save-dev
+
+read -p "name of new git repo?" newrepo
+rm -rf .git
+git init
+git add .
+git commit -m 'first commit'
+git remote add origin http://jfonv@github.com/jfonv/$newrepo:
+git push -u origin master
+git checkout -b dev
+git remote add origin http://jfonv@github.com/jfonv/$newrepo
+git push -u origin dev

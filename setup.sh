@@ -51,3 +51,5 @@ git push -u origin master
 git checkout -b dev
 git remote add origin http://jfonv@github.com/jfonv/$newrepo
 git push -u origin dev
+
+rm setup.sh
